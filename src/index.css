@@ -1,0 +1,91 @@
+RESET CSS *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 10px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.header-nav {
+  padding-block: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: ghostwhite;
+  border-radius: 8px;
+
+  & a {
+    font-weight: bold;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: grey;
+  }
+}
+
+.users {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+button {
+  padding-block: 5px;
+  padding-inline: 10px;
+  margin-left: 5px;
+}
